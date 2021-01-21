@@ -3,8 +3,9 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
     container: {
         position: 'absolute',
-        bottom: 42,
-        backgroundColor: '#131313',
+        bottom: 42,     // iPhone 8 Plus
+        // bottom: 79,     // iPhone 12 Pro Max
+        backgroundColor: '#212121',
         flexDirection: 'row',
         width: '100%',
         borderBottomWidth: 1,

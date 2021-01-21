@@ -1,12 +1,12 @@
 import { useRoute } from '@react-navigation/native';
 import React, { useEffect } from 'react';
-import { View, FlatList } from 'react-native';
+import { StyleSheet, View, FlatList } from 'react-native';
 
 import AlbumHeader from '../components/AlbumHeader';
 import SongListItem from '../components/SongListItem';
 import albumDetails from '../data/albumDetails';
 
-const AlbumScreen = () => {
+export default function AlbumScreen() {
 
     const route = useRoute();
 
@@ -15,7 +15,7 @@ const AlbumScreen = () => {
     }, [])
 
     return (
-        <View>
+        <View style={styles.container}>
             <FlatList
                 data={albumDetails.songs}
                 renderItem={({ item }) => <SongListItem song={item} />}
@@ -26,4 +26,8 @@ const AlbumScreen = () => {
     )
 }
 
-export default AlbumScreen;
+const styles = StyleSheet.create({
+    container: {
+        marginBottom: 63,
+    }
+});

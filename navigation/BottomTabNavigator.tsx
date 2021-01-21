@@ -28,26 +28,47 @@ export default function BottomTabNavigator() {
   return (
     <BottomTab.Navigator
       initialRouteName="Home"
-      tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}>
+      tabBarOptions={{ activeTintColor: Colors[colorScheme].tint, style: { backgroundColor: "#212121" } }}>
       <BottomTab.Screen
         name="Home"
         component={HomeScreenNavigator}
         options={{
-          tabBarIcon: ({ color }) => <Entypo name="home" size={30} style={{ marginBottom: -3 }} color={color} />,
+          tabBarIcon: ({ color }) => (
+            <Entypo
+              name="home"
+              size={30}
+              style={{ marginBottom: -3 }}
+              color={color}
+            />
+            )
         }}
       />
       <BottomTab.Screen
         name="Search"
         component={SearchScreenNavigator}
         options={{
-          tabBarIcon: ({ color }) => <EvilIcons name="search" size={30} style={{ marginBottom: -3 }} color={color} />,
+          tabBarIcon: ({ color }) => (
+            <EvilIcons
+              name="search"
+              size={30}
+              style={{ marginBottom: -3 }}
+              color={color}
+            />
+            )
         }}
       />
       <BottomTab.Screen
         name="Your Library"
         component={YourLibraryScreenNavigator}
         options={{
-          tabBarIcon: ({ color }) => <MaterialCommunityIcons name="bookshelf" size={30} style={{ marginBottom: -3 }} color={color} />,
+          tabBarIcon: ({ color }) => (
+            <MaterialCommunityIcons
+              name="bookshelf"
+              size={30}
+              style={{ marginBottom: -3 }}
+              color={color}
+            />
+            )
         }}
       />
     </BottomTab.Navigator>

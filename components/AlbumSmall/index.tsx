@@ -10,12 +10,10 @@ import { Album } from '../../types'
 import { useNavigation } from '@react-navigation/native';
 
 export type AlbumProps = {
-    size: number,
-    borderRadius: number,
     album: Album
 }
 
-const AlbumComponent = (props: AlbumProps) => {
+const AlbumComponentSmall = (props: AlbumProps) => {
     
     const navigation = useNavigation();
 
@@ -25,14 +23,10 @@ const AlbumComponent = (props: AlbumProps) => {
     
     return (
         <TouchableWithoutFeedback onPress={onPress}>
-            <View style={[styles.container, { width: props.size }]}>
+            <View style={styles.container}>
                 <Image
                     source={{ uri: props.album.imageUri }}
-                    style={{
-                        height: props.size,
-                        width: props.size,
-                        borderRadius: props.borderRadius
-                    }}
+                    style={styles.image}
                 />
                 <Text style={styles.text}>{props.album.artistsHeadline}</Text>
             </View>
@@ -40,4 +34,4 @@ const AlbumComponent = (props: AlbumProps) => {
     );
 }
 
-export default AlbumComponent;
+export default AlbumComponentSmall;
