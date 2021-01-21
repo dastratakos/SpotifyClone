@@ -11,6 +11,7 @@ export type SongListItemProps = {
 
 const SongListItem = (props: SongListItemProps) => {
     const { song } = props;
+    const color = song.nowPlaying ? '#1db954' : 'white'
     return (
         <View style={styles.container}>
             <View style={styles.leftContainer}>
@@ -18,7 +19,7 @@ const SongListItem = (props: SongListItemProps) => {
                     <Image style={styles.image} source={{ uri: song.imageUri }} />
                 }
                 <View style={styles.descriptionContainer}>
-                    <Text style={styles.title} numberOfLines={1}>{song.title}</Text>
+                    <Text style={[styles.title, {color: color}]} numberOfLines={1}>{song.title}</Text>
                     <View style={styles.subDescriptionContainer}>
                         {!song.downloaded ? null :
                             <MaterialCommunityIcons style={styles.smallIcon} name="download-circle" size={15} color={"#1db954"} />
@@ -30,7 +31,7 @@ const SongListItem = (props: SongListItemProps) => {
                     </View>
                 </View>
             </View>
-            <TouchableOpacity style={styles.button} onPress={() => console.warn('Info button pressed')}>
+            <TouchableOpacity style={styles.button} onPress={() => console.log('Info button pressed')}>
                 <MaterialCommunityIcons name="dots-horizontal" size={30} color={"#b3b3b3"} />
             </TouchableOpacity>
         </View>

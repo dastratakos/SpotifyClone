@@ -20,7 +20,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     title: {
-        color: 'white',
         fontSize: 16,
     },
     artist: {

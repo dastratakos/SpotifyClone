@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, Image, View } from 'react-native';
+import { Text, Image, View, TouchableOpacity } from 'react-native';
 import { FontAwesome, MaterialCommunityIcons } from '@expo/vector-icons';
 
 import styles from './styles';
@@ -21,8 +21,12 @@ const PlayerWidget = () => {
                     <Text style={styles.artist}>{song.artist}</Text>
                 </View>
                 <View style={styles.iconsContainer}>
-                    <MaterialCommunityIcons name="monitor-speaker" size={20} color={"white"} />
-                    <FontAwesome name="play" size={20} color={"white"} />
+                    <TouchableOpacity onPress={() => console.log('Speaker button pressed')}>
+                        <MaterialCommunityIcons name="monitor-speaker" size={20} color={"white"} />
+                    </TouchableOpacity>
+                    <TouchableOpacity onPress={() => console.log('Play button pressed')}>
+                        <FontAwesome name="play" size={20} color={"white"} />
+                    </TouchableOpacity>
                 </View>
             </View>
         </View>

@@ -39,4 +39,5 @@ export type Song = {
   artist: string;
   explicit: boolean;
   downloaded: boolean;
+  nowPlaying: boolean;
 }

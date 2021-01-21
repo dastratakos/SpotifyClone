@@ -22,18 +22,18 @@ const AlbumHeader = (props: AlbumHeaderProps) => {
                 <View>
                     <Text style={styles.description}>{album.description}</Text>
                     <View style={styles.iconsContainer}>
-                        <TouchableOpacity onPress={() => console.warn('Like button pressed')}>
+                        <TouchableOpacity onPress={() => console.log('Like button pressed')}>
                             <AntDesign name="hearto" size={28} color={"#b3b3b3"} />
                         </TouchableOpacity>
-                        <TouchableOpacity onPress={() => console.warn('Download button pressed')}>
+                        <TouchableOpacity onPress={() => console.log('Download button pressed')}>
                             <MaterialCommunityIcons name="download-circle-outline" size={30} color={"#b3b3b3"} />
                         </TouchableOpacity>
-                        <TouchableOpacity onPress={() => console.warn('Details button pressed')}>
+                        <TouchableOpacity onPress={() => console.log('Details button pressed')}>
                             <MaterialCommunityIcons name="dots-horizontal" size={30} color={"#b3b3b3"} />
                         </TouchableOpacity>
                     </View>
                 </View>
-                <TouchableOpacity onPress={() => console.warn('Play button pressed')}>
+                <TouchableOpacity onPress={() => console.log('Play button pressed')}>
                     <View style={styles.playButton}>
                         <View style={styles.playButtonBackground}>
                             <AntDesign name="play" size={40} color={"#1db954"} />

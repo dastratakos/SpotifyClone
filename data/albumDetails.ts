@@ -12,6 +12,7 @@ export default {
         artist: "Post Malone",
         explicit: false,
         downloaded: false,
+        nowPlaying: true,
     },{
         id: "2",
         imageUri: "",
@@ -19,6 +20,7 @@ export default {
         artist: "Post Malone",
         explicit: true,
         downloaded: false,
+        nowPlaying: false,
     },{
         id: "3",
         imageUri: "",
@@ -26,6 +28,7 @@ export default {
         artist: "Post Malone, DaBaby",
         explicit: true,
         downloaded: false,
+        nowPlaying: false,
     },{
         id: "4",
         imageUri: "",
@@ -33,6 +36,7 @@ export default {
         artist: "Post Malone",
         explicit: true,
         downloaded: false,
+        nowPlaying: false,
     },{
         id: "5",
         imageUri: "",
@@ -40,6 +44,7 @@ export default {
         artist: "Post Malone",
         explicit: true,
         downloaded: false,
+        nowPlaying: false,
     },{
         id: "6",
         imageUri: "",
@@ -54,6 +59,7 @@ export default {
         artist: "Post Malone, Halsey, Future",
         explicit: true,
         downloaded: false,
+        nowPlaying: false,
     },{
         id: "8",
         imageUri: "",
@@ -61,6 +67,7 @@ export default {
         artist: "Post Malone, Meek Mill, Lil Baby",
         explicit: true,
         downloaded: false,
+        nowPlaying: false,
     },{
         id: "9",
         imageUri: "",
@@ -68,6 +75,7 @@ export default {
         artist: "Post Malone, Ozzy Osbourne, Travis Scott",
         explicit: false,
         downloaded: false,
+        nowPlaying: false,
     },{
         id: "10",
         imageUri: "",
@@ -75,6 +83,7 @@ export default {
         artist: "Post Malone",
         explicit: true,
         downloaded: false,
+        nowPlaying: false,
     },{
         id: "11",
         imageUri: "",
@@ -82,6 +91,7 @@ export default {
         artist: "Post Malone, SZA",
         explicit: true,
         downloaded: false,
+        nowPlaying: false,
     },{
         id: "12",
         imageUri: "",
@@ -96,6 +106,7 @@ export default {
         artist: "Post Malone",
         explicit: true,
         downloaded: false,
+        nowPlaying: false,
     },{
         id: "14",
         imageUri: "",
@@ -110,6 +121,7 @@ export default {
         artist: "Post Malone",
         explicit: true,
         downloaded: false,
+        nowPlaying: false,
     },{
         id: "16",
         imageUri: "",
@@ -117,6 +129,7 @@ export default {
         artist: "Post Malone",
         explicit: true,
         downloaded: false,
+        nowPlaying: false,
     },{
         id: "17",
         imageUri: "",
