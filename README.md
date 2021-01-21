@@ -6,9 +6,15 @@
 
 *Spotify Clone* is a React Native app that implements frontend features of the Spotify app.
 
+#### Home Screen
+
 <img width="400" src="assets/images/HomeScreen.PNG" alt="Home Screen">
 
+#### Album Screen Header
+
 <img width="400" src="assets/images/AlbumScreenHeader.PNG" alt="Album Screen Header">
+
+#### Album Screen Song List
 
 <img width="400" src="assets/images/AlbumScreenList.PNG" alt="Album Screen List">
 
