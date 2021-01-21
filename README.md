@@ -16,6 +16,6 @@
 
 #### Album Screen Song List
 
-<img width="400" src="assets/images/AlbumScreenList.PNG" alt="Album Screen List">
+<img width="400" src="assets/images/AlbumScreenSongList.PNG" alt="Album Screen Song List">
 
 After starting out with (this tutorial)[https://www.youtube.com/watch?v=Ho41KNKvoBc&t=22s], I built out more components and improved upon the styling.
