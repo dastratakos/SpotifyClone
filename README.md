@@ -15,7 +15,7 @@
                 <h4>Home Screen</h4>
                 <div style="padding: 10px;">
                     <img src="assets/images/HomeScreenHeader.PNG" alt="Home Screen Header" width="400"/>
-                    <img src="assets/images/HomeScreen.PNG" alt="Home Screen" width="400"/>
+                    <img src="assets/images/HomeScreenAlbums.PNG" alt="Home Screen" width="400"/>
                 </div>
             </div>
             <div style="float: left; width: 50%;">
