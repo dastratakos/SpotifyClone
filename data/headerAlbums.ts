@@ -3,31 +3,31 @@ export default {
   albums: [
     {
       id: '1',
-      imageUri: 'https://www.graphicdesignforum.com/uploads/default/original/2X/d/d3c4e744046205a49d06beb874df3b39da7c9c73.jpeg',
+      imageUri: 'https://i.pinimg.com/originals/07/74/a4/0774a492388967e2b5b6d65b95f3fd1a.png',
       artistsHeadline: 'Liked Songs'
     }, {
       id: '2',
-      imageUri: 'https://images-na.ssl-images-amazon.com/images/I/81hMEx3kLqL._SL1200_.jpg',
-      artistsHeadline: 'Workout'
+      imageUri: 'https://www.nookmag.com/wp-content/uploads/2018/01/cardio-2.jpg',
+      artistsHeadline: 'Cardio'
     },
     {
       id: '3',
-      imageUri: 'https://i.pinimg.com/originals/68/4e/15/684e154f08949242696f71939db92071.jpg',
-      artistsHeadline: 'Legends Never Die'
+      imageUri: 'https://i.scdn.co/image/ab67616d0000b273d87dd9780854f07967cae8ae',
+      artistsHeadline: 'Horizons'
     },
     {
       id: '4',
-      imageUri: 'https://images-na.ssl-images-amazon.com/images/I/71hhWv46jSL._AC_SL1200_.jpg',
-      artistsHeadline: 'We Love You Tecca'
+      imageUri: 'https://i.scdn.co/image/ab67616d0000b273572c68f79b356c21202e248c',
+      artistsHeadline: 'Holy'
     },
     {
       id: '5',
-      imageUri: 'https://images-na.ssl-images-amazon.com/images/I/81J2ELXfKQL._AC_SL1500_.jpg',
-      artistsHeadline: 'Bobby Tarantino II'
+      imageUri: 'https://i.scdn.co/image/ab67616d0000b273600adbc750285ea1a8da249f',
+      artistsHeadline: 'Please Excuse Me for Being Antisocial'
     },
     {
       id: '5',
-      imageUri: 'https://images-na.ssl-images-amazon.com/images/I/81J2ELXfKQL._AC_SL1500_.jpg',
+      imageUri: 'https://i.scdn.co/image/ab67706f00000003eebd0beae4ccda853e8c2f60',
       artistsHeadline: 'US Summer Hits of the 10s'
     },
   ]

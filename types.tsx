@@ -24,10 +24,11 @@ export type YourLibraryScreenParamList = {
 
 export type Album = {
   id: string;
-  name: string,
-  by: string,
-  numberOfLikes: number,
+  name: string;
+  artist: string;
+  description: string;
   imageUri: string;
+  artistImageUri: string;
   artistsHeadline: string;
 }
 
@@ -36,4 +37,6 @@ export type Song = {
   imageUri: string;
   title: string;
   artist: string;
+  explicit: boolean;
+  downloaded: boolean;
 }

@@ -5,10 +5,10 @@ import { FontAwesome, MaterialCommunityIcons } from '@expo/vector-icons';
 import styles from './styles';
 
 const song = {
-    id: '1',
-    imageUri: 'https://cdn6.f-cdn.com/contestentries/1485199/27006121/5ca3e39ced7f1_thumb900.jpg',
-    title: 'High on You',
-    artist: 'Helen'
+    id: "1",
+    imageUri: "https://i.scdn.co/image/ab67616d0000b2739478c87599550dd73bfa7e02",
+    title: "Hollywood's Bleeding",
+    artist: "Post Malone"
 }
 
 const PlayerWidget = () => {

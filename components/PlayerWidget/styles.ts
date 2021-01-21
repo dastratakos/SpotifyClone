@@ -3,8 +3,7 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
     container: {
         position: 'absolute',
-        bottom: 42,     // iPhone 8 Plus
-        // bottom: 79,     // iPhone 12 Pro Max
+        bottom: 55,
         backgroundColor: '#212121',
         flexDirection: 'row',
         width: '100%',
@@ -35,8 +34,8 @@ const styles = StyleSheet.create({
         fontSize: 12,
     },
     image: {
-        width: 60,
-        height: 60,
+        width: 55,
+        height: 55,
         marginRight: 15,
     }
 })

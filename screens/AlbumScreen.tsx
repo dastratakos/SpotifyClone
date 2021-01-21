@@ -28,6 +28,6 @@ export default function AlbumScreen() {
 
 const styles = StyleSheet.create({
     container: {
-        marginBottom: 63,
+        marginBottom: 54,
     }
 });

@@ -5,27 +5,33 @@ export default [{
     title: 'Recently played',
     albums: [
       {
+        id: '0',
+        imageUri: 'https://i.scdn.co/image/ab67616d0000b2739478c87599550dd73bfa7e02',
+        artistsHeadline: "Holywood's Bleeding"
+      },
+      {
         id: '1',
-        imageUri: 'https://www.graphicdesignforum.com/uploads/default/original/2X/d/d3c4e744046205a49d06beb874df3b39da7c9c73.jpeg',
+        imageUri: 'https://i.scdn.co/image/ab67616d0000b2737005885df706891a3c182a57',
         artistsHeadline: 'IGOR'
-      }, {
+      },
+      {
         id: '2',
-        imageUri: 'https://images-na.ssl-images-amazon.com/images/I/81hMEx3kLqL._SL1200_.jpg',
+        imageUri: 'https://i.scdn.co/image/ab67616d0000b273072e9faef2ef7b6db63834a3',
         artistsHeadline: 'Astroworld'
       },
       {
         id: '3',
-        imageUri: 'https://i.pinimg.com/originals/68/4e/15/684e154f08949242696f71939db92071.jpg',
+        imageUri: 'https://i.scdn.co/image/ab67616d0000b2733e0698e4ae5ffb82a005aeeb',
         artistsHeadline: 'Legends Never Die'
       },
       {
         id: '4',
-        imageUri: 'https://images-na.ssl-images-amazon.com/images/I/71hhWv46jSL._AC_SL1200_.jpg',
+        imageUri: 'https://i.scdn.co/image/ab67616d0000b273bd69bbde4aeee723d6d08058',
         artistsHeadline: 'We Love You Tecca'
       },
       {
         id: '5',
-        imageUri: 'https://images-na.ssl-images-amazon.com/images/I/81J2ELXfKQL._AC_SL1500_.jpg',
+        imageUri: 'https://i.scdn.co/image/ab67616d0000b273e19b1b51cdd35051e17cf6dc',
         artistsHeadline: 'Bobby Tarantino II'
       },
     ]
@@ -37,7 +43,7 @@ export default [{
     albums: [
       {
         id: '6',
-        imageUri: 'https://m.media-amazon.com/images/I/51SONNukp5L._SL500_.jpg',
+        imageUri: 'https://i.scdn.co/image/f6e17db8a8afa7e5b4eafbd9146a972fb05bc704',
         artistsHeadline: 'Views'
       }, {
         id: '7',

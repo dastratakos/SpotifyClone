@@ -2,46 +2,79 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-        alignItems: 'center',
-        padding: 20
+        padding: 15
     },
     image: {
-        width: 200,
-        height: 200,
+        alignSelf: 'center',
+        width: 300,
+        height: 300,
         margin: 15,
     },
     name: {
         color: 'white',
-        fontSize: 30,
+        fontSize: 25,
         fontWeight: 'bold',
     },
-    creatorContainer: {
+    subContainer: {
+        display: 'flex',
         flexDirection: 'row',
-        margin: 10,
+        justifyContent: 'space-between',
     },
-    creator: {
+    artistContainer: {
+        marginVertical: 10,
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    artistImage: {
+        width: 20,
+        height: 20,
+        borderRadius: 10,
+    },
+    artist: {
         color: 'lightgray',
         margin: 5,
         fontSize: 15,
     },
-    likes: {
+    description: {
         color: 'lightgray',
-        margin: 5,
         fontSize: 15,
     },
-    button: {
-        backgroundColor: '#1DB954',
-        height: 60,
-        width: 175,
+    iconsContainer: {
+        marginVertical: 10,
+        width: '55%',
+        display: 'flex',
+        flex: 1,
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+    },
+    playButton: {
+        backgroundColor: '#1db954',
+        width: 50,
+        height: 50,
         borderRadius: 30,
+        alignItems: 'center',
         justifyContent: 'center',
-        alignItems: 'center'
     },
-    buttonText: {
-        color: 'lightgray',
-        fontWeight: 'bold',
-        fontSize: 20
-    }
+    playButtonBackground: {
+        backgroundColor: 'white',
+        width: 39,
+        height: 39,
+        borderRadius: 20,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    shuffleButton: {
+        position: 'relative',
+        top: -17,
+        right: -30,
+        backgroundColor: 'white',
+        width: 20,
+        height: 20,
+        borderRadius: 10,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
 })
 
 export default styles;

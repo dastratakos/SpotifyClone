@@ -28,7 +28,7 @@ const AlbumComponentSmall = (props: AlbumProps) => {
                     source={{ uri: props.album.imageUri }}
                     style={styles.image}
                 />
-                <Text style={styles.text}>{props.album.artistsHeadline}</Text>
+                <Text style={styles.text} numberOfLines={2}>{props.album.artistsHeadline}</Text>
             </View>
         </TouchableWithoutFeedback>
     );
