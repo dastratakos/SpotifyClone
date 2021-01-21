@@ -11,8 +11,14 @@ import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import AlbumScreen from '../screens/AlbumScreen';
 import HomeScreen from '../screens/HomeScreen';
-import TabTwoScreen from '../screens/TabTwoScreen';
-import { BottomTabParamList, TabOneParamList, TabTwoParamList } from '../types';
+import SearchScreen from '../screens/SearchScreen';
+import YourLibraryScreen from '../screens/YourLibraryScreen';
+import {
+  BottomTabParamList,
+  HomeScreenParamList,
+  SearchScreenParamList,
+  YourLibraryScreenParamList
+} from '../types';
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
@@ -25,21 +31,21 @@ export default function BottomTabNavigator() {
       tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}>
       <BottomTab.Screen
         name="Home"
-        component={TabOneNavigator}
+        component={HomeScreenNavigator}
         options={{
           tabBarIcon: ({ color }) => <Entypo name="home" size={30} style={{ marginBottom: -3 }} color={color} />,
         }}
       />
       <BottomTab.Screen
         name="Search"
-        component={TabTwoNavigator}
+        component={SearchScreenNavigator}
         options={{
           tabBarIcon: ({ color }) => <EvilIcons name="search" size={30} style={{ marginBottom: -3 }} color={color} />,
         }}
       />
       <BottomTab.Screen
         name="Your Library"
-        component={TabTwoNavigator}
+        component={YourLibraryScreenNavigator}
         options={{
           tabBarIcon: ({ color }) => <MaterialCommunityIcons name="bookshelf" size={30} style={{ marginBottom: -3 }} color={color} />,
         }}
@@ -50,36 +56,50 @@ export default function BottomTabNavigator() {
 
 // Each tab has its own navigation stack, you can read more about this pattern here:
 // https://reactnavigation.org/docs/tab-based-navigation#a-stack-navigator-for-each-tab
-const TabOneStack = createStackNavigator<TabOneParamList>();
+const HomeScreenStack = createStackNavigator<HomeScreenParamList>();
 
-function TabOneNavigator() {
+function HomeScreenNavigator() {
   return (
-    <TabOneStack.Navigator>
-      <TabOneStack.Screen
-        name="TabOneScreen"
+    <HomeScreenStack.Navigator>
+      <HomeScreenStack.Screen
+        name="HomeScreen"
         component={HomeScreen}
         options={{ headerTitle: 'Home' }}
       />
 
-      <TabOneStack.Screen
+      <HomeScreenStack.Screen
         name="AlbumScreen"
         component={AlbumScreen}
         options={{ headerTitle: 'Album' }}
       />
-    </TabOneStack.Navigator>
+    </HomeScreenStack.Navigator>
   );
 }
 
-const TabTwoStack = createStackNavigator<TabTwoParamList>();
+const SearchScreenStack = createStackNavigator<SearchScreenParamList>();
 
-function TabTwoNavigator() {
+function SearchScreenNavigator() {
   return (
-    <TabTwoStack.Navigator>
-      <TabTwoStack.Screen
-        name="TabTwoScreen"
-        component={TabTwoScreen}
-        options={{ headerTitle: 'Tab Two Title' }}
+    <SearchScreenStack.Navigator>
+      <SearchScreenStack.Screen
+        name="SearchScreen"
+        component={SearchScreen}
+        options={{ headerTitle: 'Search' }}
       />
-    </TabTwoStack.Navigator>
+    </SearchScreenStack.Navigator>
+  );
+}
+
+const YourLibraryScreenStack = createStackNavigator<YourLibraryScreenParamList>();
+
+function YourLibraryScreenNavigator() {
+  return (
+    <YourLibraryScreenStack.Navigator>
+      <YourLibraryScreenStack.Screen
+        name="YourLibraryScreen"
+        component={YourLibraryScreen}
+        options={{ headerTitle: 'Your Library' }}
+      />
+    </YourLibraryScreenStack.Navigator>
   );
 }

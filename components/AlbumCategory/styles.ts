@@ -2,13 +2,13 @@ import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-        margin: 10,
+        marginTop: 10,
     },
     title: {
         color: 'white',
         fontSize: 30,
         fontWeight: 'bold',
-        marginLeft: 10,
+        marginLeft: 20,
     }
 })
 

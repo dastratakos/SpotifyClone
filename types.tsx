@@ -9,13 +9,17 @@ export type BottomTabParamList = {
   "Your Library": undefined;
 };
 
-export type TabOneParamList = {
-  TabOneScreen: undefined;
+export type HomeScreenParamList = {
+  HomeScreen: undefined;
   AlbumScreen: undefined;
 };
 
-export type TabTwoParamList = {
-  TabTwoScreen: undefined;
+export type SearchScreenParamList = {
+  SearchScreen: undefined;
+};
+
+export type YourLibraryScreenParamList = {
+  YourLibraryScreen: undefined;
 };
 
 export type Album = {
